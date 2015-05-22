@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>info.danbecker</groupId>
+	<artifactId>iso8583examples</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<name>ISO-8583-Examples</name>
+	<description>A project with some payments processing examples.</description>
+
+	<contributors>
+		<contributor>
+			<name>Dan Becker</name>
+			<email>dan@danbecker.info</email>
+			<organizationUrl>http://www.danbecker.info/</organizationUrl>
+		</contributor>
+	</contributors>
+
+	<dependencies>
+		<!-- For ISO-8583 messaging -->
+		<dependency> 
+			<groupId>org.jpos</groupId> 
+			<artifactId>jpos</artifactId> 
+			<version>2.0.0</version>
+		</dependency>
+		<!-- Utilities -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+  			<artifactId>slf4j-simple</artifactId>
+  			<version>1.7.12</version>
+		</dependency>
+		<!--  Testing -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- For JSON conversions. -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.4.4</version>
+		</dependency>
+	</dependencies>
+	
+</project>
